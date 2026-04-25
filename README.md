@@ -354,9 +354,9 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 👨‍💻 Author
 
-**Sarthak Kshirsagar**
+**Krit Giri**
 
-- GitHub: [@SarthakKshirsagar01](https://github.com/SarthakKshirsagar01)
+- GitHub: [@krit-k7](https://github.com/krit-k7)
 - Built for:(https://risein.com)
   Built for: Stellar Journey to Mastery — Level 3 & Level 4
 
