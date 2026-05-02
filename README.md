@@ -21,14 +21,21 @@
 
 ---
 
-## 📸 Screenshots
+### 📸 Screenshots
 
-| Home Page                       | Create Bill                         | Bill Status                         | Pay Share                     |
-| ------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------- |
-| ![Home](./screenshots/home.png) | ![Create](./screenshots/create.png) | ![Status](./screenshots/status.png) | ![Pay](./screenshots/pay.png) |
+#### 🏠 Home Page
+![Home](./screenshots/home.png)
+
+#### ➕ Create Bill
+![Create](./screenshots/create.png)
+
+#### 📊 Bill Status
+![Status](./screenshots/status.png)
+
+#### 💸 Pay Share
+![Pay](./screenshots/pay.png)
 
 ### 📱 Mobile View
-
 ![Mobile](./screenshots/mobile.png)
 
 ---
