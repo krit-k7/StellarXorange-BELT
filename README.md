@@ -249,7 +249,7 @@ test result: ok. 4 passed; 0 failed
 ```
 
 > 📸 **Screenshot:**
-> ![Test Output](./screenshots/test-output.png)
+> ![Test Output](./screenshots/test-output.png.png)
 
 ---
 
