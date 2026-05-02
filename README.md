@@ -23,11 +23,17 @@
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
+### Home
+![Home](./screenshots/home.png.png)
 
-### Monitoring
-![Monitoring](screenshots/monitoring.png)
+### Create
+![Create](./screenshots/create.png.png)
+
+### Pay
+![Pay](./screenshots/pay.png.png)
+
+### Status
+![Status](./screenshots/status.png.png)
 
 ---
 
