@@ -265,7 +265,8 @@ Pipeline runs automatically on every push:
 
 ### CI Screenshots
 
-![CI Screenshot 1](./screenshots/ci-screenshot.png%20(2).png)
+<img width="1324" height="538" alt="image" src="https://github.com/user-attachments/assets/cbbdee33-d53a-4a9c-9527-3b951a46ab7b" />
+
 
 ![CI Screenshot 2](./screenshots/ci-screenshot.png.png)
 
