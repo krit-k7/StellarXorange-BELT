@@ -268,7 +268,8 @@ Pipeline runs automatically on every push:
 <img width="1324" height="538" alt="image" src="https://github.com/user-attachments/assets/cbbdee33-d53a-4a9c-9527-3b951a46ab7b" />
 
 
-![CI Screenshot 2](./screenshots/ci-screenshot.png.png)
+<img width="1228" height="513" alt="image" src="https://github.com/user-attachments/assets/d2ee4091-bd19-4ddc-a464-5537036eaea3" />
+
 
 ---
 
