@@ -263,8 +263,11 @@ Pipeline runs automatically on every push:
 - ✅ Split Token Contract — 4 tests
 - ✅ Frontend Build
 
-![CI Screenshot](<./screenshots/ci-screenshot.png(2)>)
-![CI Screenshot](./screenshots/ci-screenshot.png)
+### CI Screenshots
+
+![CI Screenshot 1](./screenshots/ci-screenshot.png%20(2).png)
+
+![CI Screenshot 2](./screenshots/ci-screenshot.png.png)
 
 ---
 
