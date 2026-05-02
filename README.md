@@ -21,22 +21,13 @@
 
 ---
 
-### 📸 Screenshots
+## Screenshots
 
-#### 🏠 Home Page
-![Home](./screenshots/home.png)
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-#### ➕ Create Bill
-![Create](./screenshots/create.png)
-
-#### 📊 Bill Status
-![Status](./screenshots/status.png)
-
-#### 💸 Pay Share
-![Pay](./screenshots/pay.png)
-
-### 📱 Mobile View
-![Mobile](./screenshots/mobile.png)
+### Monitoring
+![Monitoring](screenshots/monitoring.png)
 
 ---
 
