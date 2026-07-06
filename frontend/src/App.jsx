@@ -9,23 +9,28 @@ function App() {
   const [page, setPage] = useState("home");
   const [currentBill, setCurrentBill] = useState(null);
 
+
+  const goHome = () => {
+    setPage("home");
+  };
+
+
   const goToCreate = () => {
     setPage("create");
   };
+
 
   const goToStatus = (bill) => {
     setCurrentBill(bill);
     setPage("status");
   };
 
+
   const goToPay = (bill) => {
     setCurrentBill(bill);
     setPage("pay");
   };
 
-  const goHome = () => {
-    setPage("home");
-  };
 
 
   return (
@@ -33,15 +38,19 @@ function App() {
     <div className="app">
 
 
-      {/* Navbar */}
+      {/* NAVBAR */}
+
 
       <nav className="navbar">
 
-        <button 
+
+        <button
           className="logo"
           onClick={goHome}
         >
+
           💸 Stellar Split
+
         </button>
 
 
@@ -53,37 +62,52 @@ function App() {
 
 
 
-      <div className="container">
+
+
+      <main className="container">
+
+
+
+        {/* HOME PAGE */}
 
 
         {page === "home" && (
 
 
-          <div className="hero">
+          <section className="hero">
+
 
 
             <div className="badge">
-              ⚡ Powered by Stellar Blockchain
+
+              ⚡ Powered by Stellar Network
+
             </div>
+
+
 
 
 
             <h1>
 
-              Split Bills on 
+              Smart Bill Splitting
               
-              <span> Blockchain</span>
+              <span> On Blockchain</span>
 
             </h1>
 
 
 
+
+
             <p>
 
-              Create, split and collect payments instantly using
-              secure Stellar smart contracts.
+              Split expenses, collect payments and settle
+              instantly with secure Stellar smart contracts.
 
             </p>
+
+
 
 
 
@@ -93,15 +117,11 @@ function App() {
 
 
               <button
-
                 className="btn-primary"
-
                 onClick={goToCreate}
-
               >
 
-                🚀 Create a Bill
-
+                🚀 Create Bill
 
               </button>
 
@@ -118,34 +138,32 @@ function App() {
 
                   goToPay({
 
-                    id: 1,
+                    id:1,
 
-                    title: "Demo Bill",
+                    title:"Demo Bill",
 
-                    total: 1000,
+                    total:1000,
 
-                    perShare: 500,
+                    perShare:500,
 
-                    participants: 2,
+                    participants:2,
 
-                    paid: 0,
+                    paid:0,
 
                   })
 
                 }
 
-
               >
 
-
-                💳 Pay My Share
-
+                💳 Demo Payment
 
               </button>
 
 
 
             </div>
+
 
 
 
@@ -166,17 +184,23 @@ function App() {
                 </div>
 
 
-                <h3>Create</h3>
+                <h3>
+
+                  Create
+
+                </h3>
 
 
                 <p>
 
-                  Generate smart bill splits within seconds.
+                  Create a bill and automatically divide
+                  payments among friends.
 
                 </p>
 
 
               </div>
+
 
 
 
@@ -193,14 +217,22 @@ function App() {
                 </div>
 
 
-                <h3>Connect</h3>
+
+                <h3>
+
+                  Share
+
+                </h3>
+
 
 
                 <p>
 
-                  Share secure payment links with your group.
+                  Share payment requests securely using
+                  blockchain powered links.
 
                 </p>
+
 
 
               </div>
@@ -223,25 +255,135 @@ function App() {
 
 
 
-                <h3>Settle</h3>
+                <h3>
+
+                  Settle
+
+                </h3>
 
 
 
                 <p>
 
-                  Instant blockchain powered settlement.
+                  Receive fast and transparent settlements
+                  on Stellar network.
 
                 </p>
-
 
 
               </div>
 
 
 
-
             </div>
 
+
+
+
+          </section>
+
+        )}
+
+
+
+
+
+
+
+
+
+        {/* CREATE BILL PAGE */}
+
+
+        {page === "create" && (
+
+
+          <div className="form-page">
+
+
+            <CreateBill
+
+              onBack={goHome}
+
+              onCreated={goToStatus}
+
+            />
+
+
+          </div>
+
+
+        )}
+
+
+
+
+
+
+
+
+
+        {/* STATUS PAGE */}
+
+
+        {page === "status" && (
+
+
+          <div className="bill-page">
+
+
+            <BillStatus
+
+
+              bill={currentBill}
+
+
+              onBack={goHome}
+
+
+              onPay={goToPay}
+
+
+            />
+
+
+          </div>
+
+
+        )}
+
+
+
+
+
+
+
+
+        {/* PAYMENT PAGE */}
+
+
+
+        {page === "pay" && (
+
+
+
+          <div className="bill-page payment-box">
+
+
+
+            <PayShare
+
+
+              bill={currentBill}
+
+
+              onBack={goHome}
+
+
+              onPaid={goToStatus}
+
+
+            />
 
 
 
@@ -255,70 +397,15 @@ function App() {
 
 
 
-        {page === "create" && (
 
-          <CreateBill
-
-            onBack={goHome}
-
-            onCreated={goToStatus}
-
-          />
-
-        )}
-
-
-
-
-
-
-        {page === "status" && (
-
-          <BillStatus
-
-            bill={currentBill}
-
-            onBack={goHome}
-
-            onPay={goToPay}
-
-          />
-
-        )}
-
-
-
-
-
-
-
-        {page === "pay" && (
-
-          <PayShare
-
-            bill={currentBill}
-
-            onBack={goHome}
-
-            onPaid={goToStatus}
-
-          />
-
-        )}
-
-
-
-
-
-
-      </div>
-
+      </main>
 
 
     </div>
 
 
   );
+
 }
 
 
