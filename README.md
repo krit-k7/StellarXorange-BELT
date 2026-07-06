@@ -13,7 +13,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **[https://stellar-split-app.vercel.app](https://stellar-split-app.vercel.app)**
+🔗 **[https://stellar-split-app.vercel.app](https://stellar-xorange-belt.vercel.app/)**
 
 ## 🎥 Demo Video
 
