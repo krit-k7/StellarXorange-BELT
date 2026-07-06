@@ -26,6 +26,11 @@
 ### Home
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/248fa4fc-8efe-4c03-91fd-df35cd19eb10" />
 
+
+### Mobile View
+<img width="524" height="880" alt="image" src="https://github.com/user-attachments/assets/40d88332-c271-4d1d-b57b-8cc9f000dc7c" />
+
+
 ### Create
 ![Create](./screenshots/create.png.png)
 
