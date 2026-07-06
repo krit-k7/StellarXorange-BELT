@@ -7,7 +7,7 @@
 [![React](https://img.shields.io/badge/Frontend-React-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Rust](https://img.shields.io/badge/Contract-Rust-f74c00?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![CI](https://github.com/krit-k7/StellarXorange-BELT/actions/workflows/test.yml/badge.svg)](https://github.com/krit-k7/StellarXorange-BELT/actions/workflows/test.yml)
+[![CI](https://github.com/krit-k7/StellarXorange-BELT/actions/workflows/main.yml/badge.svg)](https://github.com/krit-k7/StellarXorange-BELT/actions/workflows/main.yml)
 
 ---
 
