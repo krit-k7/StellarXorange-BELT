@@ -1,64 +1,431 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body{
+  background:
+  radial-gradient(circle at top left,#7c3aed35,transparent 35%),
+  radial-gradient(circle at bottom right,#38bdf835,transparent 30%),
+  #020617;
+
+  color:white;
+  font-family:
+  Inter,
+  system-ui,
+  sans-serif;
+
+  min-height:100vh;
+}
+
+
+/* Navbar */
+
+
+.navbar{
+
+  height:90px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:0 50px;
+
+  border-bottom:1px solid #ffffff15;
+
+  background:#020617aa;
+
+  backdrop-filter:blur(20px);
+
+}
+
+
+
+.logo{
+
+  background:none;
+
+  border:none;
+
+  color:white;
+
+  font-size:24px;
+
+  font-weight:800;
+
+  cursor:pointer;
+
+
+}
+
+
+
+/* Main */
+
+
+.container{
+
+  width:90%;
+
+  margin:auto;
+
+
+}
+
+
+
+/* Hero */
+
+
+.hero{
+
+  min-height:80vh;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+
+}
+
+
+
+/* Badge */
+
+
 .badge{
-display:inline-block;
-padding:10px 20px;
-background:#7c3aed30;
-border:1px solid #8b5cf6;
-border-radius:50px;
-margin-bottom:30px;
-animation:float 3s infinite;
+
+  display:inline-block;
+
+  padding:12px 25px;
+
+  background:#7c3aed30;
+
+  border:1px solid #8b5cf6;
+
+  border-radius:50px;
+
+  margin-bottom:30px;
+
+  color:#c4b5fd;
+
+  font-weight:bold;
+
+  animation:float 3s infinite;
+
 }
 
 
-.card{
-transition:.3s ease;
+
+.hero h1{
+
+  font-size:65px;
+
+  margin-bottom:20px;
+
+
 }
 
 
-.card:hover{
-transform:translateY(-12px);
-box-shadow:
-0 0 30px #7c3aed80;
+
+.hero h1 span{
+
+  background:linear-gradient(
+  90deg,
+  #8b5cf6,
+  #38bdf8
+  );
+
+
+  -webkit-background-clip:text;
+
+
+  color:transparent;
+
+
 }
 
 
-.card-icon{
-font-size:45px;
-margin-bottom:20px;
+
+.hero p{
+
+  max-width:650px;
+
+  color:#94a3b8;
+
+  font-size:20px;
+
+  line-height:1.6;
+
+
 }
+
+
+
+
+/* Buttons */
+
+
+
+.btn-row{
+
+  margin-top:40px;
+
+  display:flex;
+
+  gap:20px;
+
+
+}
+
+
+
+.btn-primary,
+.btn-outline{
+
+
+  padding:16px 35px;
+
+  border-radius:15px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  transition:.3s;
+
+
+}
+
+
+
+.btn-primary{
+
+  background:linear-gradient(
+  90deg,
+  #7c3aed,
+  #2563eb
+  );
+
+  color:white;
+
+  border:none;
+
+
+}
+
+
+
+.btn-outline{
+
+  background:#ffffff05;
+
+  color:white;
+
+  border:1px solid #475569;
+
+
+}
+
 
 
 .btn-primary:hover,
 .btn-outline:hover{
-transform:scale(1.05);
+
+  transform:scale(1.05);
+
+
 }
+
+
+
+
+
+/* Cards */
+
+
+.cards{
+
+  margin-top:70px;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:30px;
+
+  flex-wrap:wrap;
+
+
+}
+
+
+
+
+.card{
+
+
+  width:260px;
+
+  height:220px;
+
+  padding:35px;
+
+
+  background:#ffffff10;
+
+
+  border:1px solid #ffffff20;
+
+
+  border-radius:25px;
+
+
+  backdrop-filter:blur(20px);
+
+
+  text-align:left;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.card:hover{
+
+
+  transform:translateY(-12px);
+
+
+  box-shadow:
+  0 0 40px #7c3aed80;
+
+
+}
+
+
+
+.card-icon{
+
+
+  font-size:45px;
+
+
+  margin-bottom:20px;
+
+
+}
+
+
+
+
+.card h3{
+
+
+  font-size:25px;
+
+
+  margin-bottom:15px;
+
+
+}
+
+
+
+.card p{
+
+
+  color:#94a3b8;
+
+
+  font-size:15px;
+
+
+}
+
+
+
+
+
+/* Animation */
 
 
 @keyframes float{
 
+
 0%{
+
 transform:translateY(0);
+
 }
+
+
 
 50%{
+
+
 transform:translateY(-10px);
+
+
 }
+
+
 
 100%{
+
+
 transform:translateY(0);
+
+
 }
 
+
 }
 
 
-.hero h1 span{
-background:linear-gradient(
-90deg,
-#8b5cf6,
-#38bdf8
-);
 
--webkit-background-clip:text;
+/* Mobile */
 
-color:transparent;
+
+@media(max-width:700px){
+
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+
+.navbar{
+
+padding:20px;
+
+}
+
+
+.btn-row{
+
+flex-direction:column;
+
+}
+
 
 }
