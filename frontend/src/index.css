@@ -4,155 +4,99 @@
   box-sizing:border-box;
 }
 
-
 body{
-  background:
-  radial-gradient(circle at top left,#7c3aed35,transparent 35%),
-  radial-gradient(circle at bottom right,#38bdf835,transparent 30%),
-  #020617;
-
-  color:white;
-  font-family:
-  Inter,
-  system-ui,
-  sans-serif;
-
-  min-height:100vh;
+  background:#f8fafc;
+  color:#0f172a;
+  font-family:Inter,system-ui,sans-serif;
 }
 
 
-/* Navbar */
-
+/* NAV */
 
 .navbar{
-
-  height:90px;
+  height:80px;
+  padding:0 70px;
 
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
 
-  padding:0 50px;
-
-  border-bottom:1px solid #ffffff15;
-
-  background:#020617aa;
-
-  backdrop-filter:blur(20px);
-
+  background:white;
+  border-bottom:1px solid #e5e7eb;
 }
-
 
 
 .logo{
-
-  background:none;
-
   border:none;
-
-  color:white;
+  background:white;
 
   font-size:24px;
-
   font-weight:800;
 
+  color:#111827;
   cursor:pointer;
-
-
 }
 
 
-
-/* Main */
-
+/* Layout */
 
 .container{
-
   width:90%;
-
+  max-width:1200px;
   margin:auto;
-
-
 }
-
 
 
 /* Hero */
 
-
 .hero{
-
-  min-height:80vh;
+  padding-top:90px;
 
   display:flex;
-
   flex-direction:column;
 
   align-items:center;
-
-  justify-content:center;
-
   text-align:center;
-
-
 }
-
-
-
-/* Badge */
 
 
 .badge{
 
-  display:inline-block;
+  padding:8px 18px;
 
-  padding:12px 25px;
+  border-radius:30px;
 
-  background:#7c3aed30;
+  background:#eef6ff;
 
-  border:1px solid #8b5cf6;
+  color:#2563eb;
 
-  border-radius:50px;
+  border:1px solid #bfdbfe;
 
-  margin-bottom:30px;
+  font-size:14px;
 
-  color:#c4b5fd;
+  font-weight:600;
 
-  font-weight:bold;
-
-  animation:float 3s infinite;
-
+  margin-bottom:35px;
 }
 
 
 
 .hero h1{
 
-  font-size:65px;
+  font-size:58px;
 
-  margin-bottom:20px;
+  max-width:800px;
 
+  line-height:1.1;
 
+  letter-spacing:-2px;
 }
 
 
 
 .hero h1 span{
 
-  background:linear-gradient(
-  90deg,
-  #8b5cf6,
-  #38bdf8
-  );
-
-
-  -webkit-background-clip:text;
-
-
-  color:transparent;
-
+  color:#2563eb;
 
 }
 
@@ -160,22 +104,19 @@ body{
 
 .hero p{
 
-  max-width:650px;
+  margin-top:25px;
 
-  color:#94a3b8;
+  color:#64748b;
 
-  font-size:20px;
+  max-width:620px;
 
-  line-height:1.6;
+  font-size:19px;
 
-
+  line-height:1.7;
 }
 
 
-
-
 /* Buttons */
-
 
 
 .btn-row{
@@ -184,8 +125,7 @@ body{
 
   display:flex;
 
-  gap:20px;
-
+  gap:16px;
 
 }
 
@@ -194,63 +134,49 @@ body{
 .btn-primary,
 .btn-outline{
 
+  padding:14px 28px;
 
-  padding:16px 35px;
+  border-radius:10px;
 
-  border-radius:15px;
-
-  cursor:pointer;
-
-  font-size:16px;
+  font-size:15px;
 
   font-weight:700;
 
-  transition:.3s;
+  cursor:pointer;
 
+  transition:.2s;
 
 }
 
 
-
 .btn-primary{
 
-  background:linear-gradient(
-  90deg,
-  #7c3aed,
-  #2563eb
-  );
+  background:#2563eb;
 
   color:white;
 
   border:none;
 
-
 }
-
 
 
 .btn-outline{
 
-  background:#ffffff05;
+  background:white;
 
-  color:white;
+  color:#111827;
 
-  border:1px solid #475569;
-
+  border:1px solid #d1d5db;
 
 }
-
 
 
 .btn-primary:hover,
 .btn-outline:hover{
 
-  transform:scale(1.05);
-
+  transform:translateY(-3px);
 
 }
-
-
 
 
 
@@ -259,64 +185,47 @@ body{
 
 .cards{
 
-  margin-top:70px;
+  margin-top:80px;
 
-  display:flex;
+  display:grid;
 
-  justify-content:center;
+  grid-template-columns:repeat(3,1fr);
 
-  gap:30px;
+  gap:25px;
 
-  flex-wrap:wrap;
-
+  width:100%;
 
 }
-
 
 
 
 .card{
 
-
-  width:260px;
-
-  height:220px;
+  background:white;
 
   padding:35px;
 
+  border-radius:18px;
 
-  background:#ffffff10;
-
-
-  border:1px solid #ffffff20;
-
-
-  border-radius:25px;
-
-
-  backdrop-filter:blur(20px);
-
+  border:1px solid #e5e7eb;
 
   text-align:left;
 
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.04);
 
-  transition:.3s ease;
-
+  transition:.25s;
 
 }
 
 
 
-
 .card:hover{
 
-
-  transform:translateY(-12px);
-
+  transform:translateY(-8px);
 
   box-shadow:
-  0 0 40px #7c3aed80;
-
+  0 20px 40px rgba(37,99,235,.12);
 
 }
 
@@ -324,26 +233,19 @@ body{
 
 .card-icon{
 
+  font-size:35px;
 
-  font-size:45px;
-
-
-  margin-bottom:20px;
-
+  margin-bottom:25px;
 
 }
 
 
 
-
 .card h3{
 
+  font-size:24px;
 
-  font-size:25px;
-
-
-  margin-bottom:15px;
-
+  margin-bottom:12px;
 
 }
 
@@ -351,51 +253,19 @@ body{
 
 .card p{
 
+  color:#64748b;
 
-  color:#94a3b8;
-
-
-  font-size:15px;
-
+  line-height:1.6;
 
 }
 
 
 
+/* Wallet Button override */
 
+button{
 
-/* Animation */
-
-
-@keyframes float{
-
-
-0%{
-
-transform:translateY(0);
-
-}
-
-
-
-50%{
-
-
-transform:translateY(-10px);
-
-
-}
-
-
-
-100%{
-
-
-transform:translateY(0);
-
-
-}
-
+  font-family:inherit;
 
 }
 
@@ -404,7 +274,13 @@ transform:translateY(0);
 /* Mobile */
 
 
-@media(max-width:700px){
+@media(max-width:800px){
+
+.navbar{
+
+padding:0 25px;
+
+}
 
 
 .hero h1{
@@ -414,9 +290,9 @@ font-size:42px;
 }
 
 
-.navbar{
+.cards{
 
-padding:20px;
+grid-template-columns:1fr;
 
 }
 
@@ -426,6 +302,5 @@ padding:20px;
 flex-direction:column;
 
 }
-
 
 }
