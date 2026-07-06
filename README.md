@@ -24,7 +24,7 @@
 ## Screenshots
 
 ### Home
-![Home](./screenshots/home.png.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/248fa4fc-8efe-4c03-91fd-df35cd19eb10" />
 
 ### Create
 ![Create](./screenshots/create.png.png)
